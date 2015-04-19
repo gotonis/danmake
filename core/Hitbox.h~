@@ -1,0 +1,10 @@
+#include <cmath.h>
+
+using namespace oxygine;
+
+abstract class Hitbox: public Actor {
+
+  virtual void collidesWith(Hitbox other); 
+  virtual void collidesWith(CircleHB circle);
+
+}
