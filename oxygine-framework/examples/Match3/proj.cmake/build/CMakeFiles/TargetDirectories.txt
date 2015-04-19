@@ -1,0 +1,2 @@
+/home/mark/Projects/danmake/oxygine-framework/examples/Match3/proj.cmake/build/CMakeFiles/Match3.dir
+/home/mark/Projects/danmake/oxygine-framework/examples/Match3/proj.cmake/build/oxygine-framework/CMakeFiles/oxygine-framework.dir

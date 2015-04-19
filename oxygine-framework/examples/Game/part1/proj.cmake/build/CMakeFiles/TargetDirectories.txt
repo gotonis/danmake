@@ -1,0 +1,2 @@
+/home/mark/Projects/danmake/oxygine-framework/examples/Game/part1/proj.cmake/build/CMakeFiles/GamePart1.dir
+/home/mark/Projects/danmake/oxygine-framework/examples/Game/part1/proj.cmake/build/oxygine-framework/CMakeFiles/oxygine-framework.dir
