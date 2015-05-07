@@ -16,5 +16,7 @@ class dmkEngine {
   dmkEngine(); //may point to some sort of construction info file
   dmkPlayer player;
   map<int, dmkBullet> bullets;
-
+  int spawnx; //player start location
+  int spawny;
+  int pLives; //current number of lives the player has
   public void update();

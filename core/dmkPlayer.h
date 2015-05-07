@@ -8,7 +8,7 @@ using namespace oxygine;
 class DmkPlayer: public DmkActor {
 
   static int dbinterval = 1;
-
+  static int startBombs = 2;
   DmkPlayer();
   
   //protected int deathBombInterval; //How long you have to db
@@ -19,7 +19,12 @@ class DmkPlayer: public DmkActor {
   protected float fvx; //normal focused x and y speeds
   protected float fvy;
   protected timer dbclock;
+  protected int bombs;
+
+  public void bombExt();
   public void fire();
   
-  public void update();
-  public void die();
+  public void update() throw (int);
+  protected void die();
+  protected void bomb();
+  public void respawn();

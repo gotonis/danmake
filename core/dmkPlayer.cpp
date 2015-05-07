@@ -6,19 +6,37 @@
 
 using namespace oxygine;
 
-public void DmkPlayer::Update {
-
+  public void DmkPlayer::update() throw (int) {
+  
   if(dbclock.tick() == 0){
-    // ~this; //destroy self. I think that's correct syntax?
+    throw new -1;
   }
 }
 
 DmkPlayer::DmkPlayer(){
   dbclock = new timer(dbinterval);
-  
+  bombs = startBombs;
 
 }
 
+DmkPlayer::respawn(int x, int y){
+  dbclock.cancel();
+  bombs = startBombs;
+  setX(x);
+  setY(y);
+}
+
 public void DmkPlayer::die(){
-  dbclock.restart();
+  dbclock.restart(); //Start the deathbomb timer
+  //death sound effect
+}
+
+public void DmkPlayer::bomb(){
+  bombs--;
+  dbclock.cancel();
+  //other stuff bombs do while active
+}
+
+public void DmkPlayer::bombExt(){
+  bombs++;
 }

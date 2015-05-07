@@ -1,0 +1,5 @@
+Things to do before I have a basic demo:
+
+implement basic bullets
+implement sprites
+implement player movement

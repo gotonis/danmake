@@ -13,7 +13,18 @@
 using namespace oxygine;
 
 public void dmkEngine::update(){
+  try{
   player.update();
+  }
+  catch (-1) {
+    if(pLives > 0){
+      pLives--;
+      player.respawn(spawnx, spawny);
+    }
+    else {
+      //Go to some menu
+    }
+  }
 
   for (std::map<int,dmkBullet>::iterator it=bullets.begin(); it!=bullets.end(); ++it){
     it->second.update();
