@@ -1,4 +1,4 @@
-#include "timer"
+#include "timer.h"
 
 using namespace oxygine;
 
