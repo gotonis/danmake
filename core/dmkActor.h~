@@ -12,15 +12,8 @@ class DmkActor: public Actor {
     hitbox = &hb;
   }
 
-  
- public:
-   Hitbox getHB();
-   virtual void update();
-   int collidesWith(dmkActor other);
-   
- protected:
-   Hitbox * hitbox;
-   float curVX;
-   float curVY;
+  protected Hitbox * hitbox;
 
-   void move();
+  public Hitbox getHB();
+  public virtual void update();
+  public int collidesWith(dmkActor other);

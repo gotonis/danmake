@@ -13,9 +13,3 @@ public Hitbox DmkActor::getHB(){
 public int DmkActor::collidesWith(dmkActor other){
   return hitbox->collidesWith(other.getHB());
 }
-
-protected void DmkActor::move(){
-  float curX = getX();
-  float curY = getY();
-  setPosition(curX + curVX, curY + curVY);
-}
